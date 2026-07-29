@@ -1,0 +1,21 @@
+{
+  "name": "citewire",
+  "version": "0.1.0",
+  "description": "Attribution-first MCP server for free news sources and free article APIs.",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./core": "./src/core/rpc.js",
+    "./providers": "./src/providers/index.js",
+    "./transports/stdio": "./src/transports/stdio.js",
+    "./transports/http": "./src/transports/http.js"
+  },
+  "bin": { "citewire": "bin/citewire.js" },
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node --test" },
+  "repository": { "type": "git", "url": "git+https://github.com/MeekPhills/citewire.git" },
+  "keywords": ["mcp", "model-context-protocol", "news", "rss", "attribution", "gdelt", "arxiv", "openalex"],
+  "files": ["src", "bin", "README.md", "LICENSE"]
+}
