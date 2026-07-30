@@ -49,8 +49,5 @@ treat other contributors the way you would want to be treated.
 
 ## CI
 
-The GitHub Actions workflow lives at `docs/ci-workflow.yml` until a
-workflow-scoped credential moves it to `.github/workflows/ci.yml`
-(the hosting token used for the initial publish carried `repo` scope
-only, and GitHub refuses workflow files without `workflow` scope).
-Moving that one file is the only step needed to turn CI on.
+GitHub Actions runs `node --test` on Node 18 and 22 for every push and
+pull request (`.github/workflows/ci.yml`).

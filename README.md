@@ -1,5 +1,7 @@
 # citewire
 
+[![npm](https://img.shields.io/npm/v/citewire)](https://www.npmjs.com/package/citewire) [![CI](https://github.com/MeekPhills/citewire/actions/workflows/ci.yml/badge.svg)](https://github.com/MeekPhills/citewire/actions) [![license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 An attribution-first MCP server for free news sources and free article APIs.
 
 ## Why it exists
@@ -27,6 +29,8 @@ citewire has two jobs.
    [docs/providers.md](docs/providers.md).
 
 ## Quick start
+
+Install from npm (`npm install citewire`) or run directly with `npx`.
 
 Run over stdio (the default transport, and how MCP clients launch the server):
 
