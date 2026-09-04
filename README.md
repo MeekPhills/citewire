@@ -65,15 +65,15 @@ npx citewire --config citewire.config.json --http 8722
 ## Configuration
 
 A deployment is described entirely by a small JSON file: an optional `platform`
-to wrap, and the providers you choose to enable. This example wraps the Karaya
-Group Industry News platform and enables one provider, OpenAlex:
+to wrap, and the providers you choose to enable. This example wraps a generic
+news platform and enables one provider, OpenAlex:
 
 ```json
 {
   "platform": {
-    "name": "Karaya Group Industry News",
-    "siteUrl": "https://karaya.group",
-    "apiBase": "https://karaya.group/api/v1/news"
+    "name": "Example Newswire",
+    "siteUrl": "https://news.example.org",
+    "apiBase": "https://news.example.org/api/v1/news"
   },
   "providers": {
     "openalex": { "enabled": true }
@@ -131,13 +131,6 @@ detail, endpoints, and free-access terms are in
 - **Storage is out of scope.** citewire never stores or republishes content. It
   reads metadata and links to the original. That boundary is the point of the
   project, not a limitation of it.
-
-## Deployments
-
-Karaya Group's Industry News platform
-([karaya.group/industry-news](https://karaya.group/industry-news)) is the first
-production deployment. It serves citewire at
-[https://karaya.group/mcp](https://karaya.group/mcp).
 
 ## Contributing
 
